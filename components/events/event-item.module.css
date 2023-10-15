@@ -1,0 +1,46 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  border: 5px;
+  border-radius: 5%;
+}
+.item .content {
+  display: flex;
+  flex-direction: column;
+}
+.item h2 {
+  font-size: 32px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 20px;
+}
+.item img {
+  width: 40%;
+  object-fit: cover;
+}
+.content {
+  width: 100%;
+}
+.summary {
+}
+.address {
+  color: gray;
+  font-weight: 600;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.date {
+  color: gray;
+  font-weight: 800;
+  margin: 20px;
+  margin-bottom: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.actions {
+  color: blue;
+  display: flex;
+  justify-content: flex-end;
+  /* text-decoration: underline; */
+  font-weight: 700;
+  font-family: "Arial Narrow Bold", sans-serif;
+  margin-right: 8%;
+}
