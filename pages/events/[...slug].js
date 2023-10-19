@@ -1,9 +1,11 @@
 import React from "react";
-
+import { getFeaturedEvents } from "@/dummy-data";
+import EventList from "@/components/events/event-list";
 const FilteredEventsPage = () => {
+  const featuredEvents = getFeaturedEvents();
   return (
     <div>
-      <h1>ss</h1>
+      <EventList events={featuredEvents} />
     </div>
   );
 };

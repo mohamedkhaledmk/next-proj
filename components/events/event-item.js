@@ -2,6 +2,9 @@ import Link from "next/link";
 import React from "react";
 import classes from "./event-item.module.css";
 import Button from "../ui/Button";
+import DateIcon from "../icons/date-icon";
+import ArrowRightIcon from "../icons/arrow-right-icon";
+import AddressIcon from "../icons/address-icon";
 const EventItem = (props) => {
   let { event } = props;
   const readeableDate = new Date(event.date).toLocaleDateString("en-US", {
@@ -24,7 +27,12 @@ const EventItem = (props) => {
           <address>{event.address}</address>
         </div>
         <div className={classes.actions}>
-          <Button link={`/${event.id}`}>Explore the Event</Button>
+          <Button link={`/${event.id}`}>
+            <span>Explore the Event</span>
+            <span className={classes.icon}>
+              <ArrowRightIcon />
+            </span>
+          </Button>
           {/* <Link href={`/${event.id}`}>Explore the Event</Link> */}
         </div>
       </div>

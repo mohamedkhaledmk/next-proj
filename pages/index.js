@@ -9,10 +9,9 @@ import { getFeaturedEvents } from "../dummy-data";
 
 export default function Home() {
   return (
-    <>
-      <h1>main page</h1>
+    <div data-aos="fade-up">
       <EventList events={getFeaturedEvents()} />
       <Link href={`/portfolio`}>Portfolio Page</Link>
-    </>
+    </div>
   );
 }
